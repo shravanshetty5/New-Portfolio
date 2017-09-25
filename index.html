@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="myWeb">
 
   <head>
 
@@ -11,72 +11,24 @@
     <title>Bare - Start Bootstrap Template</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <style>
-      body {
-        padding-top: 54px;
-      }
-      @media (min-width: 992px) {
-        body {
-          padding-top: 56px;
-        }
-      }
-
-    </style>
-
+    <link href="scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/angular-typewrite.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+     <!-- Bootstrap core JavaScript -->
+     <script src="scripts/jquery/jquery.min.js"></script>
+     <script src="scripts/popper/popper.min.js"></script>
+     <script src="scripts/angularjs/angular.js"></script>
+     <script src="scripts/angularjs/angular-ui-router.js"></script>
+     <script src="scripts/angularjs/angular-typewrite.js"></script>
+     <script src="scripts/bootstrap/js/bootstrap.min.js"></script>
+     <script src="my-web-app/app-module.js"></script>
+     <script src="my-web-app/my-web-app.component.js"></script>
+     <script src="my-web-app/main-navigation.component.js"></script>
+     <script src="my-web-app/home.component.js"></script>
   </head>
 
-  <body>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">Start Bootstrap</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Page Content -->
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h1 class="mt-5">A Bootstrap 4 Starter Template</h1>
-          <p class="lead">Complete with pre-defined file paths and responsive navigation!</p>
-          <ul class="list-unstyled">
-            <li>Bootstrap 4.0.0-beta</li>
-            <li>jQuery 3.2.1</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/popper/popper.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
+  <body ng-cloak>
+    <my-web-app></my-web-app>
   </body>
 
 </html>
