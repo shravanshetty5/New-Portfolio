@@ -9,32 +9,32 @@
     appModule.config(function ($stateProvider, $urlRouterProvider) {
         var states = [
             {
-                name: 'home',
+                name: 'Home',
                 url: '',
                 template: '<home></home>'
             },
             {
-                name: 'home2',
+                name: 'Home2',
                 url: '/',
                 template: '<home></home>'
             },
             {
-                name: 'education',
+                name: 'Education',
                 url: '/education',
                 template: '<education></education>'
             },
             {
-                name: 'work',
+                name: 'Work',
                 url: '/work',
                 template: '<work></work>'
             },
             {
-                name: 'skills',
+                name: 'Skills',
                 url: '/skills',
                 template: '<skills></skills>'
             },
             {
-                name: 'projects',
+                name: 'Projects',
                 url: '/projects',
                 template: '<projects></projects>'
             }

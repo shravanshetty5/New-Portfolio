@@ -8,20 +8,8 @@
           </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href ui-sref='home'>Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href ui-sref='education'>Education</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href ui-sref='work'>Work</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href ui-sref='skills'>Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href ui-sref='projects'>Projects</a>
+        <li class="nav-item" ng-repeat="item in vm.naviagtionItems" ng-class="{active: (vm.currentSelection === item)}">
+            <a class="nav-link" href ui-sref="{{item}}" ng-click="vm.currentSelector(item)">{{item}}</a>
         </li>
       </ul>
     </div>
