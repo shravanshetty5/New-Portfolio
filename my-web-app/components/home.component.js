@@ -5,8 +5,8 @@
         controller: function () {
             var vm = this;
 
-            vm.welcomeText = ['Hi there and Welcome to my page.','This is Shravan Shetty and I am a FullStack Developer!!'];
+            vm.welcomeText = ['Hi There, and Welcome to my page.','This is Shravan Shetty and I am a FullStack Developer!!'];
         },
-        templateUrl: 'my-web-app/home.component.html'
+        templateUrl: 'my-web-app/components/home.component.html'
     });
 }());
