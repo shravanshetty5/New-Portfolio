@@ -6,5 +6,5 @@
             var vm = this;
         },
         templateUrl: 'my-web-app/components/projects.component.html'
-    })
+    });
 }());

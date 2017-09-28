@@ -2,10 +2,17 @@
     'use strict';
 	angular.module('myWeb').component('mainNavigation', {
         controllerAs: 'vm',
-        controller: function() {
+        controller: function($location) {
             var vm = this;
-            vm.currentSelection = 'Home';
-
+            vm.$onInit = function () {
+                let temp = $location.path();
+                if(temp === "/") {
+                    vm.currentSelection = "Home"
+                } else {
+                    vm.currentSelection = temp.charAt(1.).toUpperCase() + temp.substring(2);
+                }
+            }
+            
             vm.naviagtionItems = ['Home', 'Education', 'Work', 'Skills', 'Projects'];
 
             vm.currentSelector = function (item) {

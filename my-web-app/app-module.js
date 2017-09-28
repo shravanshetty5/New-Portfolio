@@ -37,11 +37,16 @@
                 name: 'Projects',
                 url: '/projects',
                 template: '<projects></projects>'
+            },
+            {
+                name: 'Error',
+                url: '/error',
+                template: '<error></error>'
             }
         ];
-        $urlRouterProvider.otherwise('/');
+        $urlRouterProvider.otherwise('/error');
         states.forEach(function (state) {       
             $stateProvider.state(state);
         });
-    })
+    });
 }());
