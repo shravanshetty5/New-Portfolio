@@ -24,8 +24,8 @@
                 template: '<education></education>'
             },
             {
-                name: 'Work',
-                url: '/work',
+                name: 'Experience',
+                url: '/experience',
                 template: '<work></work>'
             },
             {

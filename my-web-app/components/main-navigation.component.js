@@ -13,7 +13,7 @@
                 }
             }
             
-            vm.naviagtionItems = ['Home', 'Education', 'Work', 'Skills', 'Projects'];
+            vm.naviagtionItems = ['Home','Skills', 'Experience', 'Education', 'Projects'];
 
             vm.currentSelector = function (item) {
                 vm.currentSelection = item;
