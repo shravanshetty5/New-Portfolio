@@ -1,8 +1,14 @@
-<li class="media">
-    <img class="d-flex mr-3 col-md-auto" src="" alt="Work Thumbnail Image">
-    <div class="media-body col-md-auto">
-        <h5>{{vm.work.title}}</h5>
-        <h6>{{vm.work.company}}</h6>
-        <p>{{vm.work.startDate}} - {{vm.work.endDate}}</p>
-    </div>
-</li>
+<div class="card border-dark" style="margin: 1rem;">
+        <div class="card-header text-white bg-dark">
+            <h5>{{vm.work.title}}</h5>
+        </div>
+        <div class="card-body text-dark">
+            <div class="media">
+                <img class="d-flex mr-3 col-md-auto" src="" alt="School Thumbnail Image">
+                <div class="media-body col-md-auto">
+                        <h5 class="card-title">{{vm.work.company}}</h5>
+                        <p class="card-text">{{vm.work.startDate}} - {{vm.work.endDate}}</p>
+                </div>
+            </div>
+        </div>
+      </div>

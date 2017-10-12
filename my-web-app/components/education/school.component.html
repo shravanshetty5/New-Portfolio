@@ -1,8 +1,14 @@
-<li class="media">
-    <img class="d-flex mr-3 col-md-auto" src="" alt="School Thumbnail Image">
-    <div class="media-body col-md-auto">
+<div class="card border-dark" style="margin: 1rem;">
+    <div class="card-header text-white bg-dark">
         <h5>{{vm.school.school}}</h5>
-        <h7>{{vm.school.degree}}, {{vm.school.field}}</h7>
-        <p>{{vm.school.startYear}} - {{vm.school.endYear}}</p>
     </div>
-</li>
+    <div class="card-body text-dark">
+        <div class="media">
+            <img class="d-flex mr-3 col-md-auto" src="" alt="School Thumbnail Image">
+            <div class="media-body col-md-auto">
+                    <h5 class="card-title">{{vm.school.degree}}, {{vm.school.field}}</h5>
+                    <p class="card-text">{{vm.school.startYear}} - {{vm.school.endYear}}</p>
+            </div>
+        </div>
+    </div>
+  </div>

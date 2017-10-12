@@ -11,11 +11,6 @@
         "theme",
         "template"
     ],
-    "homepage": "",
-    "bugs": {
-        "url": "https://github.com/BlackrockDigital/startbootstrap-bare/issues",
-        "email": "feedback@startbootstrap.com"
-    },
     "license": "MIT",
     "author": "Shravan Shetty",
     "contributors": [
