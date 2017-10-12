@@ -13,7 +13,8 @@
                     "startYear": "2015",
                     "endYear": "2017",
                     "description": "",
-                    "relevantCources": ""
+                    "relevantCources": "",
+                    "imageUrl": "",
                 },
                 {
                     "school": "NMAMIT, Nitte",
@@ -23,10 +24,11 @@
                     "startYear": "2008",
                     "endYear": "2012",
                     "description": "",
-                    "relevantCources": ""
+                    "relevantCources": "",
+                    "imageUrl": "",
                 }
             ]
         },
-        templateUrl: 'my-web-app/components/education.component.html'
+        templateUrl: 'my-web-app/components/education/education.component.html'
     })
 }());

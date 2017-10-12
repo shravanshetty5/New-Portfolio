@@ -6,7 +6,7 @@
             var vm = this;
             vm.$onInit = function () {
                 let temp = $location.path();
-                if(temp === "/") {
+                if(temp === "/" || temp === "") {
                     vm.currentSelection = "Home"
                 } else {
                     vm.currentSelection = temp.charAt(1.).toUpperCase() + temp.substring(2);
