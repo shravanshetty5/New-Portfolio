@@ -4,15 +4,15 @@
         controllerAs: 'vm',
         controller: function () {
             var vm = this;
-            vm.randomdata = "Whats happening";
             vm.works = [
                 {
-                    "title": "Software Engineer II",
-                    "company": "Cisco",
-                    "location": "Dallas",
-                    "startDate": "June-2017",
-                    "endDate": "Present",
-                    "description": `As a full stack developer at Cisco, I am currently working on a Toolkit project which provides a set of reusable, well-tested, and accessible UI components based on the Symphony Design System for AngularJS, ReactJS and Angular frameworks.
+                    id: 1,
+                    title: "Software Engineer II",
+                    company: "Cisco",
+                    location: "Dallas",
+                    startDate: "June-2017",
+                    endDate: "Present",
+                    description: `As a full stack developer at Cisco, I am currently working on a Toolkit project which provides a set of reusable, well-tested, and accessible UI components based on the Symphony Design System for AngularJS, ReactJS and Angular frameworks.
                     Technologies Used: AngularJS 1.6, ReactJS, Angular, TypeScript, NodeJS, Jasmin, Karma, Webpack, SASS, HTML5, Git.
                     
                     The previous projects I have worked on Include:
@@ -23,10 +23,11 @@
                     Technologies Used:  AngularJS, javaScript ES6, Protractor,Jasmin, Sauce Labs, NodeJS, Webpack, REST API's, Cassandra, Yarn, Karma.
                     
                     `,
-                    "imgUrl": "",
+                    imgUrl: "",
 
                 },
                 {
+                    id: 2,
                     title: "Research Analyst",
                     company: "Texas A&M University",
                     location: "College Station",
@@ -49,6 +50,7 @@
 
                 },
                 {
+                    id: 3,
                     title: "Software Intern",
                     company: "Cisco",
                     location: "Dallas",
@@ -58,6 +60,7 @@
                     imgUrl: "",
                 },
                 {
+                    id: 4,
                     title: "Software Engineer",
                     company: "Accenture",
                     location: "Hyderabad",

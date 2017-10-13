@@ -1,6 +1,8 @@
 <div class="card border-dark" style="margin: 1rem;">
         <div class="card-header text-white bg-dark">
-            <h5>{{vm.work.title}}</h5>
+            <a ui-sref='Experience.workDetails({ workId: vm.work.id })' href>
+                <h5 style="color:white;">{{vm.work.title}}</h5>
+            </a>
         </div>
         <div class="card-body text-dark">
             <div class="media">

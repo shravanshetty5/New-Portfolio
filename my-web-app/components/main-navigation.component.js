@@ -5,11 +5,11 @@
         controller: function($location) {
             var vm = this;
             vm.$onInit = function () {
-                let temp = $location.path();
+                let temp = $location.path().split("/")[1];
                 if(temp === "/" || temp === "") {
                     vm.currentSelection = "Home"
                 } else {
-                    vm.currentSelection = temp.charAt(1.).toUpperCase() + temp.substring(2);
+                    vm.currentSelection = temp.charAt(0).toUpperCase() + temp.substring(1);
                 }
             }
             
