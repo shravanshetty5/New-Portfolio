@@ -1,6 +1,8 @@
 <div class="card border-dark" style="margin: 1rem;">
     <div class="card-header text-white bg-dark">
-        <h5>{{vm.school.school}}</h5>
+        <a ui-sref='Education.schoolDetails({ schoolId: vm.school.id })' href>
+            <h5 style="color:white;">{{vm.school.school}}</h5>
+        </a>
     </div>
     <div class="card-body text-dark">
         <div class="media">
@@ -11,4 +13,4 @@
             </div>
         </div>
     </div>
-  </div>
+</div>

@@ -24,9 +24,39 @@
                 template: '<education></education>'
             },
             {
+                name: 'Education.schoolList',
+                url: '/list',
+                template: '<school-list schools="vm.educationData"></school-list>'
+            },
+            {
+                name: 'Education.schoolDetails',
+                url: '/school/{schoolId}',
+                resolve: {
+                    schoolId: function ($stateParams) {
+                        return $stateParams.schoolId;
+                    }
+                },
+                template: '<school-details schools="vm.educationData" school-id="$resolve.schoolId"></school-details>'
+            },
+            {
                 name: 'Experience',
                 url: '/experience',
                 template: '<work></work>'
+            },
+            {
+                name: 'Experience.companyList',
+                url: '/list',
+                template: '<company-list works="vm.works"></company-list>'
+            },
+            {
+                name: 'Experience.workDetails',
+                url: '/work/{workId}',
+                resolve: {
+                    workId: function ($stateParams) {
+                        return $stateParams.workId;
+                    }
+                },
+                template: '<work-details works="vm.works" work-id="$resolve.workId"></work-details>'
             },
             {
                 name: 'Skills',
@@ -43,23 +73,9 @@
                 url: '/error',
                 template: '<error></error>'
             },
-            {
-                name: 'Experience.companyList',
-                url: '/list',
-                template: '<company-list works="vm.works" class="col-lg-6"></company-list>'
-            },
-            {
-                name: 'Experience.workDetails',
-                url: '/work/{workId}',
-                resolve: {
-                    workId: function ($stateParams) {
-                        return $stateParams.workId;
-                    }
-                },
-                template: '<work-details works="vm.works" work-id="$resolve.workId" class="col-lg-6"></work-details>'
-            }
         ];
         $urlRouterProvider.when('/experience', '/experience/list');
+        $urlRouterProvider.when('/education', '/education/list');
         $urlRouterProvider.otherwise('/error');
         states.forEach(function (state) {       
             $stateProvider.state(state);
