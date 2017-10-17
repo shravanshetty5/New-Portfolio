@@ -6,7 +6,7 @@
             var vm = this;
             vm.works = [
                 {
-                    id: 1,
+                    id: 0,
                     title: "Software Engineer II",
                     company: "Cisco",
                     location: "Dallas",
@@ -27,7 +27,7 @@
 
                 },
                 {
-                    id: 2,
+                    id: 1,
                     title: "Research Analyst",
                     company: "Texas A&M University",
                     location: "College Station",
@@ -50,7 +50,7 @@
 
                 },
                 {
-                    id: 3,
+                    id: 2,
                     title: "Software Intern",
                     company: "Cisco",
                     location: "Dallas",
@@ -60,7 +60,7 @@
                     imgUrl: "",
                 },
                 {
-                    id: 4,
+                    id: 3,
                     title: "Software Engineer",
                     company: "Accenture",
                     location: "Hyderabad",

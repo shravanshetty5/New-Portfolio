@@ -4,6 +4,11 @@
         controllerAs: 'vm',
         controller: function () {
             var vm = this;
+            vm.moreInfo = false;
+            
+            vm.toggleMoreInfo = function() {
+                vm.moreInfo = !vm.moreInfo;
+            }
         },
         bindings: {
             school: '<',
